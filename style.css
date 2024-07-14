@@ -1,0 +1,232 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  box-sizing: border-box;
+}
+.nav {
+  padding: 10px;
+  width: 1213px;
+  height: 50px;
+  position: fixed;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.border{
+    margin: 0px 150px 20px 151px;
+
+}
+.gird {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.food {
+    margin-top:100px;
+    box-shadow: 2px 2px 2px 2px silver;
+    
+}
+.about img{
+  transition: width 2s, height 2s, transform 3s;
+}
+.about:hover img{
+  width: 150px;
+  height: 100px;
+  transform: rotate(360deg);
+}
+.food9{
+  grid-column: 1/5;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.number{
+  height: 50px;
+  gap:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.number a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.number a:hover{
+  background-color: black;
+  color: white;
+  display: block;
+}
+div h2 {
+    padding: 10px 0px 10px 0px ;
+    text-align:center;
+    font-family: "Karma", sans-serif;
+    font-weight:lighter;
+}
+div h1 {
+  text-align:center;
+  font-family: "Karma", sans-serif;
+  font-weight:lighter;
+}
+div p{
+    padding: 20px 0px 10px 0px ;
+    text-align: center;
+    font-family: "Karma", sans-serif;
+    font-weight:lighter;
+}
+p>a{
+  color: black;
+}
+h3{
+  font-family: "Karma", sans-serif;
+  font-weight:lighter;
+}
+
+div img{
+    width: 100%;
+    height: 400px;
+}
+.dropdown{
+  display: inline-block;
+  position: relative;
+}
+.dropdown:hover .dropdown-content{
+  display:block;
+  visibility: visible;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+ z-index: 1;
+}
+.dropdown-content a{
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  text-align:center;
+}
+.dropdown-content a:hover{
+  background-color: rgb(232, 28, 28);
+  color: white;
+  display: block;
+}
+hr{
+  margin: 50px 0px 50px 0px;
+}
+.about{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 10px;
+}
+.about img{
+  padding: 30px;
+  width: 70%;
+  height: 70%;
+}
+.footer{
+  display:grid;
+  grid-template-columns: 4fr 4fr 1fr ;
+}
+.footer p{
+  text-align: left;
+}
+.item2{
+  display: flex;
+  flex-direction: column;
+}
+.item21{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 1px silver;
+}
+.item21 img{
+  padding: 10px;
+  width:50px;
+  height:50px;
+}
+.item22 img{
+  padding: 10px;
+  width:50px;
+  height:50px;
+}
+.item22{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.item21:hover{
+  background-color: silver;
+}
+.item22:hover{
+  background-color: silver;
+}
+.item31{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto auto;
+  row-gap: 20px;
+  column-gap: 2px;
+  text-align: center;
+}
+.item31 a{
+  text-decoration: none;
+}
+.item31>.sub1{
+ margin: -4px 0px 0px 0px;
+ height: 24px;
+ padding: 0px;
+ background-color: black;
+ 
+}
+.sub{
+  background-color: rgb(101, 98, 98);
+  color: white;
+  height: 20px;
+  width: 60px;
+}
+.ball_wrap{
+  position: fixed;
+  display: flex; */
+  flex-direction: row;
+  align-items: flex-end;
+}
+.ball>span{
+  box-shadow: 0px 1px 0px 0px rgba(160, 11, 11, 0.734);
+}
+.ball{
+  color: rgb(47, 255, 68);
+  width: 40px;
+  height: 40px;
+  animation: dancing 22s ease-in-out infinite;
+}
+@keyframes dancing {
+  0%{
+    transform: transition(0px);
+  }
+  100%{
+    transform: translateX(1213px);
+  }
+}
+
+.sub{
+  transition: width 3s, height 3s, transform 3s;
+}
+.sub:hover{
+  width: 50px;
+  height: 40px;
+  transform:rotate(360deg)
+}
